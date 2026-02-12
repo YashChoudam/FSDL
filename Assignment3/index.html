@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeoCalc | Modern Web Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="matrix-bg" aria-hidden="true"></canvas>
+
+  <main class="app-shell">
+    <section class="calculator" aria-label="Calculator">
+      <header class="calc-header">
+        <p class="brand">NeoCalc</p>
+        <p class="mode">Web Edition</p>
+      </header>
+
+      <div class="display-wrap" role="status" aria-live="polite">
+        <p id="history" class="history"></p>
+        <h1 id="display" class="display">0</h1>
+      </div>
+
+      <div class="keys" role="group" aria-label="Calculator keys">
+        <button class="key key-ac" data-action="clear">AC</button>
+        <button class="key key-fn" data-action="delete">DEL</button>
+        <button class="key key-fn" data-action="percent">%</button>
+        <button class="key key-op" data-action="operator" data-value="/">/</button>
+
+        <button class="key" data-action="digit" data-value="7">7</button>
+        <button class="key" data-action="digit" data-value="8">8</button>
+        <button class="key" data-action="digit" data-value="9">9</button>
+        <button class="key key-op" data-action="operator" data-value="*">x</button>
+
+        <button class="key" data-action="digit" data-value="4">4</button>
+        <button class="key" data-action="digit" data-value="5">5</button>
+        <button class="key" data-action="digit" data-value="6">6</button>
+        <button class="key key-op" data-action="operator" data-value="-">-</button>
+
+        <button class="key" data-action="digit" data-value="1">1</button>
+        <button class="key" data-action="digit" data-value="2">2</button>
+        <button class="key" data-action="digit" data-value="3">3</button>
+        <button class="key key-op" data-action="operator" data-value="+">+</button>
+
+        <button class="key key-wide" data-action="digit" data-value="0">0</button>
+        <button class="key" data-action="decimal">.</button>
+        <button class="key key-equals" data-action="equals">=</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
