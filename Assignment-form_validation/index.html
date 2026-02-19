@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Form</h1>
+
+    <form id="studentForm" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <p class="error" id="nameError"></p>
+
+      <label for="prn">PRN</label>
+      <input type="text" id="prn" placeholder="Enter your PRN" />
+      <p class="error" id="prnError"></p>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter your email" />
+      <p class="error" id="emailError"></p>
+
+      <button type="submit">Submit</button>
+      <p class="success" id="successMsg"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
